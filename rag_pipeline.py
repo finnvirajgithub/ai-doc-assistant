@@ -10,7 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 # Initialize HuggingFace Embeddings and Groq LLM (Updated to Llama 3.1)
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-llm = ChatGroq(model_name="llama-3.1-8b-instant")
+llm = ChatGroq(model_name="mixtral-8x7b-32768")
 
 def process_document(file_path):
     """Reads a PDF, chunks the text, and stores it in ChromaDB."""
