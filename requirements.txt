@@ -1,9 +1,11 @@
 streamlit
+python-dotenv
 langchain
 langchain-community
-langchain-groq
+langchain-core
 langchain-huggingface
+langchain-text-splitters
+langchain-groq
 chromadb
-PyMuPDF
+pymupdf
 sentence-transformers
-python-dotenv
