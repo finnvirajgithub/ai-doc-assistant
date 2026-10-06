@@ -8,9 +8,9 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-# Initialize HuggingFace Embeddings and Groq LLM
+# Initialize HuggingFace Embeddings and Groq LLM (Updated to Llama 3.1)
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-llm = ChatGroq(model_name="llama3-8b-8192")
+llm = ChatGroq(model_name="llama-3.1-8b-instant")
 
 def process_document(file_path):
     """Reads a PDF, chunks the text, and stores it in ChromaDB."""
